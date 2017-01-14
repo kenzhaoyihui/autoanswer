@@ -7,6 +7,16 @@ const SpecialChars = "~!@#$%^&*()_+:\"<>?{}"
 
 // Mapper translate single char to key number
 var Mapper = map[rune]int{
+	'0':  k.VK_0,
+	'1':  k.VK_1,
+	'2':  k.VK_2,
+	'3':  k.VK_3,
+	'4':  k.VK_4,
+	'5':  k.VK_5,
+	'6':  k.VK_6,
+	'7':  k.VK_7,
+	'8':  k.VK_8,
+	'9':  k.VK_9,
 	'a':  k.VK_A,
 	'b':  k.VK_B,
 	'c':  k.VK_C,
@@ -38,13 +48,29 @@ var Mapper = map[rune]int{
 	' ':  k.VK_SPACE,
 	'/':  k.VK_SLASH,
 	'\n': k.VK_ENTER,
-	'=': k.VK_
+	'=':  k.VK_EQUAL,
 
 	// special chars below
+	//'~': k.VK_0 * -100,
+	'!': k.VK_1 * -100,
+	'@': k.VK_2 * -100,
+	'#': k.VK_3 * -100,
+	'$': k.VK_4 * -100,
+	'%': k.VK_5 * -100,
+	'^': k.VK_6 * -100,
+	'&': k.VK_7 * -100,
+	'(': k.VK_9 * -100,
+	')': k.VK_0 * -100,
+	'_': k.VK_MINUS * -100,
+	'+': k.VK_EQUAL * -100,
+	'{': k.VK_LEFTBRACE * -100,
+	'}': k.VK_RIGHTBRACE * -100,
 	'|': k.VK_BACKSLASH * -100,
 	'*': k.VK_8 * -100,
 	'>': k.VK_DOT * -100,
 	'<': k.VK_COMMA * -100,
+	':': k.VK_SEMICOLON * -100,
+	'?': k.VK_SLASH * -100,
 }
 
 // StringsToByteAry translate string to byte arrary
